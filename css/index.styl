@@ -1,0 +1,112 @@
+html
+body
+    margin 0
+    padding 0
+    font-family: "BlueSkyStandard","Microsoft Yahei",Palatino,Arial,sans-serif;
+
+.container
+    width 100%
+    margin 0
+    padding 0
+
+.items
+    width 100%
+    box-sizing border-box
+    vertical-align baseline
+
+.item
+    width 100%
+    position relative
+    overflow hidden
+    z-index 1
+    
+    .context
+        width 449px
+        position absolute
+        text-align: center;
+        top 26%
+        left 50%
+        transform translate(-50%, -50%)
+        z-index 4
+        
+
+        .inner-box
+            position relative
+            z-index 2
+
+            .wl-logo
+                width 288px
+                margin 0 auto
+
+                img
+                    width 100%
+                    visibility visible
+
+                p
+                    color #fff
+                    width 100%
+                    margin 0 auto
+                    font-size 22px
+                    text-align justify
+                    -moz-text-align-last justify
+                    text-align-last justify
+                    text-justify inter-ideograph
+                    letter-spacing 7px
+                    font-weight 400
+                    line-height 22px
+                    margin-top 16px
+
+            .btn-box
+                width 100%
+                display flex
+                justify-content space-between
+                margin: 0 auto
+                margin-top 28px
+
+                a
+                    text-decoration none
+                    border 2px solid #fff
+                    text-align center
+                    width 45%
+                    height 46px
+                    line-height 46px
+                    border-radius 23px
+                    background none
+                    color #fff
+                    font-weight 700
+                    font-size 16px
+                    letter-spacing 2px
+
+                    &:hover
+                        background-color #fff
+                        color #000
+    
+    .pic
+        width 100%
+        background-color #000
+
+        img
+            width 100%
+            height auto
+            display block
+.hid
+    opacity 0
+
+.anm
+    opacity 1
+    animation pulse 1s linear 1
+
+.show
+    transition all 2s ease .2s
+    opacity 1
+
+@keyframes pulse {
+    0%,50%{
+        opacity: 0;
+        transform: translate(0, 100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}

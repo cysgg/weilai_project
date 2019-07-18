@@ -1,0 +1,142 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "BlueSkyStandard", "Microsoft Yahei", Palatino, Arial, sans-serif;
+}
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.items {
+  width: 100%;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+.item {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.item .context {
+  width: 449px;
+  position: absolute;
+  text-align: center;
+  top: 26%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+.item .context .inner-box {
+  position: relative;
+  z-index: 2;
+}
+.item .context .inner-box .wl-logo {
+  width: 288px;
+  margin: 0 auto;
+}
+.item .context .inner-box .wl-logo img {
+  width: 100%;
+  visibility: visible;
+}
+.item .context .inner-box .wl-logo p {
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 22px;
+  text-align: justify;
+  -moz-text-align-last: justify;
+  text-align-last: justify;
+  text-justify: inter-ideograph;
+  letter-spacing: 7px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 16px;
+}
+.item .context .inner-box .btn-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 28px;
+}
+.item .context .inner-box .btn-box a {
+  text-decoration: none;
+  border: 2px solid #fff;
+  text-align: center;
+  width: 45%;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 23px;
+  background: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+.item .context .inner-box .btn-box a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.item .pic {
+  width: 100%;
+  background-color: #000;
+}
+.item .pic img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.hid {
+  opacity: 0;
+}
+.anm {
+  opacity: 1;
+  animation: pulse 1s linear 1;
+}
+.show {
+  transition: all 2s ease 0.2s;
+  opacity: 1;
+}
+@-moz-keyframes pulse {
+  0%, 50% {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes pulse {
+  0%, 50% {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@-o-keyframes pulse {
+  0%, 50% {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes pulse {
+  0%, 50% {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
